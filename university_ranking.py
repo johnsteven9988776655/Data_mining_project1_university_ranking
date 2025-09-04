@@ -75,7 +75,7 @@ def group_and_rank_by_country(universities_list):
 
 # main execution
 if __name__ == "__main__":
-    print("--- World University Rankings Analysis ---")
+    print(" World University Rankings Analysis ")
     
     # Load all university data from the CSV file.
     all_universities = load_university_data()
@@ -95,7 +95,9 @@ if __name__ == "__main__":
         ranked_by_country_2015 = group_and_rank_by_country(universities_2015)
 
         #  Display the top 5 universities for a selection of countries.
-        countries_to_display = ["USA", "United Kingdom", "Canada", "Germany", "Japan","France","Switzerland","Australia","Italy","Netherlands"]
+        countries_to_display = ["USA", "United Kingdom", "Canada", "Germany", 
+                                "Japan","France","Switzerland",
+                                "Australia","Italy","Netherlands"]
         
         for country in countries_to_display:
             if country in ranked_by_country_2015:
